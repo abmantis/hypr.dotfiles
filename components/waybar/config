@@ -68,7 +68,7 @@
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
     },
     "network": {
-        "format": "",
+        "format": "󰈂",
         "format-disconnected": "{icon}",
         "format-ethernet": "{icon}",
         "format-wifi": "{icon} {signalStrength}%",
@@ -76,8 +76,8 @@
         "format-alt-click": "click-right",
         "format-icons": {
             "wifi": ["", "" ,""],
-            "ethernet": [""],
-            "disconnected": [""]
+            "ethernet": ["󰈀"],
+            "disconnected": ["󰈂"]
         },
         "interval": 10,
         "on-click-middle": "gnome-terminal --title=\"nmtui\" -- nmtui",
@@ -85,16 +85,16 @@
     },
     "pulseaudio": {
         "format": "{format_source}  {icon} {volume}%",
-        "format-muted": "{format_source}  婢 {volume}%",
-        "format-source": "",
-        "format-source-muted": "",
+        "format-muted": "{format_source}  󰖁 {volume}%",
+        "format-source": "󰍬",
+        "format-source-muted": "󰍭",
         "format-icons": {
-            "headphones": "",
-            "handsfree": "",
+            "headphone": "",
+            "hands-free": "",
             "headset": "",
-            "phone": "\uf095",
-            "bluez_output.14_3F_A6_00_3B_7D.headset-head-unit": "\uf7cd",
-            "default": ["奄", "奔", "墳", ""]
+            "phone": "",
+            "bluez_output.88_C9_E8_46_74_26.1.headset-head-unit": "󰋎",
+            "default": ["󰕿", "󰖀", "󰕾", ""]
         },
         "on-click-middle": "kitty pulsemixer",
         "on-click-right": "~/.config/hypr/components/waybar/modules/sound_toggle_bt_profile.sh",
@@ -136,7 +136,7 @@
         "format": "{icon}",
         "format-alt": "{icon} {percent}%",
         "format-alt-click": "click-right",
-        "format-icons": ["", ""],
+        "format-icons": ["", "󰌵"],
         "on-scroll-down": "brightnessctl set 1%-",
         "on-scroll-up": "brightnessctl set 1%+"
     },
@@ -145,8 +145,8 @@
         "format-alt": "{icon} {status}",
         "format-alt-click": "click-right",
         "format-icons": {
-            "activated": "零",
-            "deactivated": "鈴"
+            "activated": "󰒳",
+            "deactivated": "󰒲"
         },
         "tooltip": false
     },    
