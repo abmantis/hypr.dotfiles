@@ -54,7 +54,7 @@
             "spotify": ""
         },
         "status-icons": {
-            "paused": "⏸"
+            "paused": "󰏤"
         },
     },
     "bluetooth": {
@@ -98,7 +98,6 @@
             "default": ["󰕿", "󰖀", "󰕾", ""]
         },
         "on-click-middle": "kitty pulsemixer",
-        "on-click-right": "~/.config/hypr/components/waybar/modules/sound_toggle_bt_profile.sh",
         "tooltip": true
     },
     "custom/cpu": {
