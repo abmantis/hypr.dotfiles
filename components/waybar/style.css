@@ -13,7 +13,8 @@ window#waybar {
     color: #d8dee9;
 }
 
-#workspaces, #clock, #custom-pomo, #tray, #language, #backlight, #custom-upower, #bluetooth,  #pulseaudio, #idle_inhibitor, #network, #custom-cpu {
+#workspaces, #clock, #custom-pomo, #tray, #language, #backlight, #custom-upower,
+#bluetooth,  #pulseaudio, #idle_inhibitor, #network, #custom-cpu, #custom-notification {
     background: #2e3440;
 }
 
