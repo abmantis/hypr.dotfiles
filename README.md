@@ -2,6 +2,7 @@
 
 - amixer
 - brightnessctl
+- gammastep
 - grim
 - playerctl
 - pulsemixer
