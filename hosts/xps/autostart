@@ -1,5 +1,3 @@
-# start with a named default workspace
-exec-once=hyprctl dispatch workspace $ws1
 exec-once=[workspace $ws1 silent] firefox
 exec-once=[workspace $ws0 silent] ferdium
 exec-once=[workspace $ws3 silent] kitty
