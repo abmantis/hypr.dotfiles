@@ -22,6 +22,10 @@
   "hide-on-action": true,
   "script-fail-notify": true,
   "scripts": {
+    "example-script": {
+      "exec": "",
+      "app-name": ""
+    }
   },
   "notification-visibility": {
     "example-name": {
@@ -125,7 +129,7 @@
             "label": "Bluetooth",
             "type": "toggle",
             "active": true,
-            "command": "bash -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && rfkill unblock bluetooth && sleep 1 && bluetoothctl power on || rfkill block bluetooth'",
+            "command": "bash -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && rfkill unblock bluetooth && sleep 3 && bluetoothctl power on || rfkill block bluetooth'",
             "update-command": "bash -c '[[ $(bluetoothctl show | grep -oP \"(?<=Powered: )\\w+\") == \"yes\" ]] && echo true || echo false'"
           }
       ]

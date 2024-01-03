@@ -1,3 +1,2 @@
 exec-once=[workspace $ws1 silent] firefox
-exec-once=[workspace $ws0 silent] ferdium
-exec-once=[workspace $ws3 silent] kitty
+exec-once=[workspace $ws1 silent] ferdium

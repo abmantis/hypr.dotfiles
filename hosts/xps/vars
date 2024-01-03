@@ -1,0 +1,7 @@
+$gtk3Theme=adw-gtk3-dark
+$iconTheme=Adwaita
+$colorScheme=prefer-dark
+$cursorTheme=Vanilla-DMZ
+
+$screenLockSec=300
+$screenOffSec=340

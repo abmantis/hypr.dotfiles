@@ -1,0 +1,7 @@
+$gtk3Theme=Adwaita
+$colorScheme=prefer-light
+$iconTheme=Yaru
+$cursorTheme=DMZ-White
+
+$screenLockSec=180
+$screenOffSec=220
