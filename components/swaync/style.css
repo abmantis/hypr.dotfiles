@@ -215,7 +215,6 @@
   border-radius: 12px;
 }
 
-/* Label widget */
 .widget-label {
   margin: 8px;
 }
@@ -224,9 +223,7 @@
   font-size: 1.1rem;
 }
 
-/* Mpris widget */
 .widget-mpris {
-  /* The parent to all players */
 }
 
 .widget-mpris-player {
@@ -242,7 +239,6 @@
 .widget-mpris-subtitle {
   font-size: 1.1rem;
 }
-
 /* Volume and Brightness Widget*/
 
 .widget-volume {
@@ -265,37 +261,11 @@
   border-bottom-right-radius: 0px;
 }
 
-.KB {
-  padding: 4px 8px 4px 8px;
-  margin: 0px 8px 0px 8px;
-  border-radius: 0;
-}
-
 .power-buttons{
   background-color: @noti-bg;
   padding: 8px;
   margin: 8px;
   border-radius: 12px;
-}
-
-
-.power-buttons>button {
-  background: transparent;
-  border: none;
-}
-
-.power-buttons>button:hover {
-  background: @noti-bg-hover;
-}
-
-.widget-menubar>box>.menu-button-bar>button{
-  border: none;
-  background: transparent;
-}
-
-.topbar-buttons>button{
-  border: none;
-  background: transparent;
 }
 
 .widget-buttons-grid{
@@ -305,15 +275,6 @@
   background-color: @noti-bg;
 }
 
-.text-button{
-  background: @noti-bg;
-  border-radius: 12px;
-}
-
-.text-button:hover {
-  background: @noti-bg-hover;
-}
-
 .powermode-buttons{
   background-color: @noti-bg;
   padding: 8px;
@@ -321,12 +282,12 @@
   border-radius: 12px;
 }
 
-.powermode-buttons>button {
+.power-buttons>button, .powermode-buttons>button {
   background: transparent;
   border: none;
 }
 
-.powermode-buttons>button:hover {
+.text-button:hover {
   background: @noti-bg-hover;
 }
 

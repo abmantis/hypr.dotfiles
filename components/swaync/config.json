@@ -49,10 +49,6 @@
     "dnd": {
       "text": "Do Not Disturb"
     },
-    "label": {
-      "max-lines": 1,
-      "text": "Controll Center"
-    },
     "mpris": {
       "image-size": 46,
       "image-radius": 0
@@ -111,7 +107,7 @@
         "actions": [
           {
             "label": "",
-            "command": "sh -c 'swaync-client -cp; hyprctl dispatch exec ~/.config/hypr/scripts/screenshot.sh'"
+            "command": "bash -c 'swaync-client -cp; hyprctl dispatch exec ~/.config/hypr/scripts/screenshot.sh'"
           }
         ]
       }
@@ -122,15 +118,15 @@
             "label": "WiFi",
             "type": "toggle",
             "active": true,
-            "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nmcli radio wifi on || nmcli radio wifi off'",
-            "update-command": "sh -c '[[ $(nmcli radio wifi) == \"enabled\" ]] && echo true || echo false'"
+            "command": "bash -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nmcli radio wifi on || nmcli radio wifi off'",
+            "update-command": "bash -c '[[ $(nmcli radio wifi) == \"enabled\" ]] && echo true || echo false'"
           },
           {
             "label": "Bluetooth",
             "type": "toggle",
             "active": true,
-            "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && rfkill unblock bluetooth && sleep 1 && bluetoothctl power on || rfkill block bluetooth'",
-            "update-command": "sh -c '[[ $(bluetoothctl show | grep -oP \"(?<=Powered: )\w+\") == \"yes\" ]] && echo true || echo false'"
+            "command": "bash -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && rfkill unblock bluetooth && sleep 1 && bluetoothctl power on || rfkill block bluetooth'",
+            "update-command": "bash -c '[[ $(bluetoothctl show | grep -oP \"(?<=Powered: )\\w+\") == \"yes\" ]] && echo true || echo false'"
           }
       ]
     }

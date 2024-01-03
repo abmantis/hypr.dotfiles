@@ -4,18 +4,12 @@
     font-family:   "Ubuntu";
     font-size:     13px;
     box-shadow:    none;
-    text-shadow:   none;
     transition-duration: 0s;
 }
 
 window#waybar {
     background: #353c4a;
-    color: #d8dee9;
-}
-
-#workspaces, #clock, #custom-pomo, #tray, #language, #backlight, #custom-upower,
-#bluetooth,  #pulseaudio, #idle_inhibitor, #network, #custom-cpu, #custom-notification {
-    background: #2e3440;
+    color: #eceff4;
 }
 
 #workspaces {
@@ -27,11 +21,11 @@ window#waybar {
     border-top:     2px solid rgba(0, 0, 0, 0);
     border-bottom:  2px solid rgba(0, 0, 0, 0);
     padding: 0 5px;
-    color: #8e95a4;
+    color: #d8dee9;
 }
 
 #workspaces button.visible {
-    color: #88c0d0;
+    color: #8fbcbb;
 }
 
 #workspaces button:hover {
@@ -40,81 +34,50 @@ window#waybar {
 }
 
 #workspaces button.active {
-    border-top-color: #88c0d0;
+    border-top-color: #8fbcbb;
 }
 
-#mode {
-    color: #88c0d0;
-    font-family: "Ubuntu";
-    margin-left: 10px;
-    padding: 0px 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    min-width:  25px;
+#workspaces, #privacy, #clock, #tray, #language, #custom-upower, #bluetooth,
+#pulseaudio, #idle_inhibitor, #network, #custom-cpu, #custom-notification {
+    padding: 0px 15px 0px 15px;
+    margin: 4px 3px 4px 3px;
+    min-width: 15px;
+    background: #2e3440;
+    border-radius: 18px;
 }
 
-#tray {
-    font-family: "Ubuntu";
+#mpris, #window {
+    color: #d8dee9;
+    padding: 0px 15px 0px 15px;
 }
 
-#language {
-    border-bottom-left-radius: 10px;
-    padding: 0px 10px 0px 15px;
+#custom-cpu {
+    min-width: 50px;
 }
 
-#custom-upower.high, #backlight, #idle_inhibitor {
-    padding:    0px 5px;
+#pulseaudio {
+    min-width: 65px;
 }
 
 #pulseaudio.source-muted {
     color: #c21b2c
 }
 
-#tray {
-    padding:    0px 10px 0px 15px;
-}
-
-#mpris, #bluetooth, #network, #custom-upower.low, #custom-upower.mid, #pulseaudio, #custom-cpu, #temperature {
-    padding:    0px 10px 0px 10px;
-    min-width:  50px;
-}
-
 #custom-upower.low {
     color: #c21b2c;
 }
 
-#privacy {
-    padding-left: 10px;
-}
-
-#clock {
-    padding-left: 15px;
-    border-bottom-left-radius: 10px;
-}
-
-#custom-pomo {
-    padding-left: 10px;
-    padding-right: 15px;    
-    border-bottom-right-radius: 10px;
-}
-
-#custom-pomo.break {
-    color:      rgba(60, 200, 60, 1);
-}
-
-#temperature.critical {
-    color:  #c21b2c;
-}
-
 #custom-cpu.critical {
-    color:  #c21b2c;
+    color: #c21b2c;
 }
+
 #custom-cpu.warning {
-    color:      rgba(255, 210, 4, 1);
+    color: rgba(255, 210, 4, 1);
 }
 
 #custom-recorder {
-	font-size: 18px;
-	margin: 2px 7px 0px 7px;
-	color: #c21b2c;
+    font-size: 18px;
+    margin: 2px 7px 0px 7px;
+    color: #c21b2c;
 }
+

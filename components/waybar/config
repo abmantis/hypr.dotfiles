@@ -3,18 +3,17 @@
     "position": "top",
 
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    "modules-center": ["custom/recorder", "clock", "custom/pomo", "privacy"],
+    "modules-center": ["custom/recorder", "clock", "privacy"],
     "modules-right": [
         "mpris",
-        "hyprland/language",
-        "tray",
-        "network",
         "custom/cpu",
+        "tray",
+        "hyprland/language",
+        "network",
         "bluetooth",
-        "pulseaudio",
-        "custom/upower",
-        "backlight",
         "idle_inhibitor",
+        "custom/upower",
+        "pulseaudio",
         "custom/notification"],
 
     "hyprland/workspaces": {
@@ -106,16 +105,6 @@
         "return-type": "json",
         "exec": "~/.config/hypr/components/waybar/modules/cpu.sh"
     },
-    "custom/pomo": {
-        "format": "{}",
-        "interval": 10,
-        "signal": 30,
-        "return-type": "json",
-        "exec": "~/.config/hypr/components/waybar/modules/pomo_status.sh",
-        "escape": true,
-        "on-click-middle": "~/.config/hypr/components/waybar/modules/pomo.sh start && pkill -RTMIN+30 waybar",
-        "on-click-right": "~/.config/hypr/components/waybar/modules/pomo.sh pause && pkill -RTMIN+30 waybar"
-    },
     "custom/upower": {
         "format": "{}",
         "interval": 60,
@@ -132,14 +121,6 @@
 		"exec-if": "pgrep wf-recorder",
         "on-click-middle": "killall -s SIGINT wf-recorder"
 	},
-    "backlight": {
-        "format": "{icon}",
-        "format-alt": "{icon} {percent}%",
-        "format-alt-click": "click-right",
-        "format-icons": ["", "󰌵"],
-        "on-scroll-down": "brightnessctl set 1%-",
-        "on-scroll-up": "brightnessctl set 1%+"
-    },
     "idle_inhibitor": {
         "format": "{icon}",
         "format-alt": "{icon} {status}",
@@ -159,7 +140,7 @@
         "format": "{icon}",
         "format-icons": {
              "notification": "<sup></sup>",
-             "none": " ",
+             "none": "",
              "dnd-notification": "<sup></sup>",
              "dnd-none": "",
              "inhibited-notification": "<sup></sup>",
