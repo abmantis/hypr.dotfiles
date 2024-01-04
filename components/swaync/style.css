@@ -158,7 +158,6 @@
 
 .control-center-list {
   background: transparent;
-  /* vertical shadow */
 }
 
 .floating-notifications {
@@ -167,7 +166,7 @@
 
 /* Window behind control center and on all other monitors */
 .blank-window {
-  background: transparent;
+  background:transparent;
 }
 
 /*** Widgets ***/
@@ -284,7 +283,12 @@
 
 .power-buttons>button, .powermode-buttons>button {
   background: transparent;
+}
+
+.text-button {
   border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .text-button:hover {
@@ -293,6 +297,8 @@
 
 .toggle{
   background: @noti-border-color;
+  outline: none;
+  box-shadow: none;
 }
 
 .toggle:checked {

@@ -131,6 +131,13 @@
             "active": true,
             "command": "bash -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && rfkill unblock bluetooth && sleep 3 && bluetoothctl power on || rfkill block bluetooth'",
             "update-command": "bash -c '[[ $(bluetoothctl show | grep -oP \"(?<=Powered: )\\w+\") == \"yes\" ]] && echo true || echo false'"
+          },
+          {
+            "label": "Dark Mode",
+            "type": "toggle",
+            "active": true,
+            "command": "bash -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && gsettings set org.gnome.desktop.interface color-scheme prefer-dark || gsettings set org.gnome.desktop.interface color-scheme prefer-light'",
+            "update-command": "bash -c '[[ $(gsettings get org.gnome.desktop.interface color-scheme | grep dark) ]] && echo true || echo false'"
           }
       ]
     }
