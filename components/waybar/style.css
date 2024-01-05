@@ -1,3 +1,16 @@
+/*
+ * vim: ft=less
+ */
+
+@define-color way-background #3b4252;
+@define-color way-widget-background #2e3440;
+@define-color way-text #eceff4;
+@define-color way-selected-text #8fbcbb;
+@define-color way-soft-text #d8dee9;
+@define-color way-attention-text #bf616a;
+@define-color way-warning-text #ebcb8b;
+
+
 * {
     border:        none;
     border-radius: 0;
@@ -8,8 +21,8 @@
 }
 
 window#waybar {
-    background: #353c4a;
-    color: #eceff4;
+    background: @way-background;
+    color: @way-text;
 }
 
 #workspaces {
@@ -21,20 +34,20 @@ window#waybar {
     border-top:     2px solid rgba(0, 0, 0, 0);
     border-bottom:  2px solid rgba(0, 0, 0, 0);
     padding: 0 5px;
-    color: #d8dee9;
+    color: @way-soft-text;
 }
 
 #workspaces button.visible {
-    color: #8fbcbb;
+    color: @way-selected-text;
 }
 
 #workspaces button:hover {
-    color: #d8dee9;
+    color: @way-soft-text;
     background: rgba(0x88, 0xc0, 0xd0, 0.7);
 }
 
 #workspaces button.active {
-    border-top-color: #8fbcbb;
+    border-top-color: @way-selected-text;
 }
 
 #workspaces, #privacy, #clock, #tray, #language, #custom-upower, #bluetooth,
@@ -42,12 +55,12 @@ window#waybar {
     padding: 0px 15px 0px 15px;
     margin: 4px 3px 4px 3px;
     min-width: 15px;
-    background: #2e3440;
+    background: @way-widget-background;
     border-radius: 18px;
 }
 
 #mpris, #window {
-    color: #d8dee9;
+    color: @way-soft-text;
     padding: 0px 15px 0px 15px;
 }
 
@@ -60,15 +73,15 @@ window#waybar {
 }
 
 #pulseaudio.source-muted {
-    color: #c21b2c
+    color: @way-attention-text;
 }
 
 #custom-upower.low {
-    color: #c21b2c;
+    color: @way-attention-text;
 }
 
 #custom-cpu.critical {
-    color: #c21b2c;
+    color: @way-attention-text;
 }
 
 #custom-cpu.warning {
@@ -78,6 +91,6 @@ window#waybar {
 #custom-recorder {
     font-size: 18px;
     margin: 2px 7px 0px 7px;
-    color: #c21b2c;
+    color: @way-attention-text;
 }
 

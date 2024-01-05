@@ -4,7 +4,7 @@
 
 @define-color noti-border-color rgba(255, 255, 255, 0.15);
 @define-color noti-bg #2E3440;
-@define-color noti-bg-alt #383E4A;
+@define-color noti-bg-alt #3b4252;
 @define-color noti-fg #E5E9F0;
 @define-color noti-bg-hover #81A1C1;
 @define-color noti-bg-focus #A3BE8C;
@@ -302,7 +302,7 @@
 }
 
 .toggle:checked {
-  background: @bg-selected;
+  background: @theme_selected_bg_color;
 }
 
 .toggle:hover {
