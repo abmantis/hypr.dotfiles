@@ -8,7 +8,6 @@
         "mpris",
         "custom/cpu",
         "tray",
-        "hyprland/language",
         "network",
         "bluetooth",
         "idle_inhibitor",
@@ -26,9 +25,6 @@
         "disable-scroll": false,
         "on-scroll-down": "hyprctl dispatch workspace e+1",
         "on-scroll-up": "hyprctl dispatch workspace e-1"
-    },
-    "hyprland/language": {
-        "format": "{short}",
     },
     "clock": {
         "format": "{:%a %d %b %H:%M   W%V}",

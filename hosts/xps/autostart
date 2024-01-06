@@ -1,2 +1,0 @@
-exec-once=[workspace $ws1 silent] firefox
-exec-once=[workspace $ws1 silent] ferdium

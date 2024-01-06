@@ -50,7 +50,7 @@ window#waybar {
     border-top-color: @way-selected-text;
 }
 
-#workspaces, #privacy, #clock, #tray, #language, #custom-upower, #bluetooth,
+#workspaces, #privacy, #clock, #tray, #custom-upower, #bluetooth,
 #pulseaudio, #idle_inhibitor, #network, #custom-cpu, #custom-notification {
     padding: 0px 15px 0px 15px;
     margin: 4px 3px 4px 3px;
