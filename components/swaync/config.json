@@ -71,19 +71,27 @@
         "position": "right",
         "actions": [
           {
+            "label": " Lock",
+            "command": "hyprctl dispatch exec ~/.config/hypr/scripts/lock_screen.sh"
+          },
+          {
+            "label": " Logout",
+            "command": "hyprctl dispatch exit"
+          },
+          {
+            "label": "⏾ Suspend",
+            "command": "systemctl suspend"
+          },
+          {
+            "label": "󱉰 Hibernate",
+            "command": "systemctl hibernate"
+          },
+          {
             "label": " Reboot",
             "command": "systemctl reboot"
           },
           {
-            "label": " Lock",
-            "command": "hyprctl dispatch exit"
-          },
-          {
-            "label": " Logout",
-            "command": "swaymsg exit"
-          },
-          {
-            "label": " Shut down",
+            "label": " Poweroff",
             "command": "systemctl poweroff"
           }
         ]

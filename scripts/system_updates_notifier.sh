@@ -34,7 +34,7 @@ if [ "$UPDATE_COUNT" -gt "10" ]; then
 
     if [ "$ACTION" = "update" ]; then
         if [[ "${OS_NAME}" = "Arch Linux" ]]; then
-            kitty --detach sudo pacman -Syu
+            kitty --detach yay -Syu
         fi
     fi
 fi
