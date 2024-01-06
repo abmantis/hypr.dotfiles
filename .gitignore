@@ -1,4 +1,4 @@
-hosts/xps/autostart
-hosts/x1/autostart
+hosts/xps/autostart.conf
+hosts/x1/autostart.conf
 links
 
