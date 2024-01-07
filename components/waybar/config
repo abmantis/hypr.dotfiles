@@ -26,6 +26,9 @@
         "on-scroll-down": "hyprctl dispatch workspace e+1",
         "on-scroll-up": "hyprctl dispatch workspace e-1"
     },
+    "hyprland/window": {
+        "on-click-middle": "hyprctl dispatch killactive"
+    },
     "clock": {
         "format": "{:%a %d %b %H:%M   W%V}",
         "on-click-middle": "xdg-open 'https://calendar.google.com'",
