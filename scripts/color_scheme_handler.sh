@@ -1,12 +1,12 @@
 #!/bin/bash
 
 set_light () {
-    kitty +kitten themes --reload-in=all Catppuccin-Latte
+    kitty +kitten themes --config-file-name theme.conf --reload-in=all Catppuccin-Latte
     find $XDG_RUNTIME_DIR -name "nvim.*" 2>/dev/null -exec nvim --server "{}" --remote-expr 'execute("set background=light")' \;
 }
 
 set_dark () {
-    kitty +kitten themes --reload-in=all Catppuccin-Mocha
+    kitty +kitten themes --config-file-name theme.conf --reload-in=all Catppuccin-Mocha
     find $XDG_RUNTIME_DIR -name "nvim.*" 2>/dev/null -exec nvim --server "{}" --remote-expr 'execute("set background=dark")' \;
 }
 
