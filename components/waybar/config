@@ -95,7 +95,7 @@
             "bluez_output.88_C9_E8_46_74_26.1.headset-head-unit": "󰋎",
             "default": ["󰕿", "󰖀", "󰕾", ""]
         },
-        "on-click-middle": "kitty pulsemixer",
+        "on-click-middle": "kitty --title pulsemixer -- pulsemixer",
         "tooltip": true
     },
     "custom/cpu": {
