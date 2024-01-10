@@ -1,13 +1,19 @@
 #!/bin/bash
 
+set_nvim () {
+    nvim --server $1 --remote-expr "execute(\"set background=$2\")" 1>/dev/null
+}
+
 set_light () {
     kitty +kitten themes --config-file-name theme.conf --reload-in=all Catppuccin-Latte
-    find $XDG_RUNTIME_DIR -name "nvim.*" 2>/dev/null -exec nvim --server "{}" --remote-expr 'execute("set background=light")' \;
+    find $XDG_RUNTIME_DIR -name "nvim.*" 2>/dev/null | while read file; do set_nvim "$file" "light"; done
+    find /tmp/nvim.$USER/ -type s 2>/dev/null | while read file; do set_nvim "$file" "light"; done
 }
 
 set_dark () {
     kitty +kitten themes --config-file-name theme.conf --reload-in=all Catppuccin-Mocha
-    find $XDG_RUNTIME_DIR -name "nvim.*" 2>/dev/null -exec nvim --server "{}" --remote-expr 'execute("set background=dark")' \;
+    find $XDG_RUNTIME_DIR -name "nvim.*" 2>/dev/null | while read file; do set_nvim "$file" "dark"; done
+    find /tmp/nvim.$USER/ -type s 2>/dev/null | while read file; do set_nvim "$file" "dark"; done
 }
 
 
