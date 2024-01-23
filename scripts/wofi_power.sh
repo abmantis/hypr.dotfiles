@@ -2,9 +2,9 @@
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-entries=" \t Lock\n⇠ \t Logout\n⏾ \t Suspend\n󱉰 \t Hibernate\n⭮ \t Reboot\n⏻ \t Poweroff"
+entries=" \t Lock\n󰩈 \t Logout\n󰤄 \t Suspend\n󱉰 \t Hibernate\n󰑐 \t Reboot\n⏻ \t Poweroff"
 
-selected=$(echo -e $entries|wofi --normal-window --width 250 --height 230 --dmenu\
+selected=$(echo -e $entries|wofi --prompt "Type an action" --normal-window --width 250 --height 270 --dmenu\
   --cache-file /dev/null | awk '{print tolower($2)}')
 
 case $selected in
