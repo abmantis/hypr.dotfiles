@@ -9,7 +9,7 @@
 - slurp
 - swappy
 - swayidle
-- swaylock
+- swaylock-effects
 - swaync
 - waybar
 - wofi
