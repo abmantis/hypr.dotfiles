@@ -6,8 +6,8 @@
     "modules-center": ["custom/recorder", "clock", "privacy"],
     "modules-right": [
         "mpris",
-        "custom/cpu",
         "tray",
+        "custom/cpu",
         "network",
         "bluetooth",
         "idle_inhibitor",

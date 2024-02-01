@@ -65,7 +65,7 @@ window#waybar {
     padding: 0px 15px 0px 15px;
 }
 
-#custom-cpu {
+#network, #custom-cpu {
     min-width: 50px;
 }
 
