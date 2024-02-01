@@ -2,6 +2,7 @@
 
 - amixer
 - brightnessctl
+- chayang
 - gammastep
 - grim
 - playerctl
@@ -9,7 +10,7 @@
 - slurp
 - swappy
 - swayidle
-- swaylock-effects
+- swaylock
 - swaync
 - waybar
 - wofi
