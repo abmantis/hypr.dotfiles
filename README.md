@@ -1,3 +1,5 @@
+**DEPRECATED: moved to https://github.com/abmantis/dotfiles**
+
 # Dependencies
 
 - amixer
